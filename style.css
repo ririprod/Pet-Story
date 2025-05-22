@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff ;
+    color: #2d2d2d;
+}
+a {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;}
+
+/* Шапка */
+ 
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .header__logo {
+
+}
+
+.header__logo-img {
+
+} */
+
+.login_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sign_up-btn {
+    margin: 30px;
+    color: #2d2d2d;
+}
+
+.btn__header {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 18px;
+
+    width: 153px;
+    height: 54px;
+    
+    line-height: 32px ;
+    background: #3366ff;
+    border-radius: 10px;
+    color: white;         
+}
+
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* welcome */
+
+.welcome {
+    background-color: #f7f5fd;
+    padding: 70px 100px;
+}
+
+.welcome .container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+
+.welcome__text {
+    margin: 30;
+    text-align: left;
+    width: 370px;
+}
+
+.welcome__title {
+    font-size: 80px;
+
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    line-height: 0.9;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.welcome__desc {
+    font-size: 18px;
+    opacity: 50%;
+
+    height: 90px;
+        width: 425px;
+}
+
+.welcome__btn {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-weight: 500;
+        font-size: 18px;
+    
+        width: 153px;
+        height: 54px;
+    
+        line-height: 32px;
+        background: #f8d57e;
+        border-radius: 10px;
+        color: white;
+}
+
+/* Video-photo */
+
+.video {
+    background-color: #f2faf8;
+    padding: 70px 260px;
+    position: relative;
+       
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.video__photo {
+    position: relative;
+        display: inline-block;
+        border-radius: 10px;
+        overflow: hidden;
+
+}
+
+.video__photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.video-photo__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(7, 1, 1, 0.411);
+}
+
+.play__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        cursor: pointer;
+}
+
+/* partners */
+
+.partners {
+padding: 80px 170px;
+}
+
+
+.partners__photo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* features-list */
+
+.features-list {
+    padding: 115px 90px;
+}
+
+.features-list .container {
+display: flex;
+justify-content: space-between;
+}
+
+.features-list__card {
+   width: 230px;
+   text-align: center;
+}
+
+.features-list__img {
+width: 85px;
+height: 85px;
+}
+
+.features-list__title {
+font-size: 18px;
+}
+
+.features-list__decs {
+font-size: 18px;
+opacity: 50%;
+width: 230px;
+height: 90px;
+}
+
+/* feedback */
+
+.feedback {
+background-color: #ece7fb;
+padding: 50px 225px;
+}
+
+.feedback .container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: 880px;
+}
+
+.feedback__text::before {
+    content: url(./image/icons/Quote\ icon.png);
+}
+
+.feedback__desc {
+    font-size: 18px;
+        font-weight: 600;
+        /* margin: 0; */
+        text-align: left;
+        width: 418px;
+}
+
+.feedback__author {
+    font-style: normal;
+font-size: 18px;
+opacity: 0.7;
+padding-top: 40px;
+}
+
+/* Contact */
+
+.contact {
+background-color: #fcfaf5;
+padding: 60px 160px;
+}
+
+.contact .container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.contact__text {
+margin: 30px;
+text-align: left;
+width: 385px;
+}
+
+.contact__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.contact__desc {
+font-size: 18px;
+opacity: 40%;
+
+margin: 0;
+margin-bottom: 40px;
+}
+
+.contact__img {
+margin-left: 100px;
+}
+
+/* footer */
+
+.footer {
+    padding: 70px 80px;
+}
+
+.footer a {
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.footer .container {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+position: relative;
+
+margin: 0;
+}
+
+.footer__contacts {
+    width: 470px;
+    height: 270px;
+    
+}
+
+.footer-logo {
+    margin-bottom: 75px;
+}
+
+.form-footer {
+
+}
+
+.email-form__wrapper  {
+    margin-top: 11px;
+    margin-bottom: 30px;
+}
+
+.email {
+    font-size: 18px;
+    padding: 11px 20px ;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+    width: 300px;
+}
+
+
+.email-form__wrapper .btn  {
+    font-size: 18px;
+    padding: 11px 32px;
+    border-radius: 10px;
+    background: #3366ff;
+    color: white;
+    border: none;
+    box-shadow: none;
+    margin-left: 20px;
+}
+
+.footer-link {
+    font-size: 18px;
+    padding-right: 30px;
+    font-weight: 600;
+    margin-top: 33px;
+}
+
+.footer__nav {
+
+}
+
+.footer__right {
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 270px;
+        /* или высота по высоте контактов */
+        position: relative;
+        padding-right: 20px;
+ }
+
+.footer__list {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
+.footer__list-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__story {
+
+}
+
+.footer__title {
+    font-weight: 600;
+}
+
+.footer__inner-list li {
+    margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+}
+
+.footer__inner-list  {
+    padding: 0;
+}
+
+.footer__list-item {
+    list-style: none;
+}
+
+.footer__care {
+
+}
+
+.footer__inner-list {
+
+}
+
+.footer__shop {
+
+}
+
+.footer__socials-icons {
+    position: absolute;
+        right: 15px;
+        bottom: 15px;
+        display: flex;
+        gap: 15px;
+}
+
+.footer__socials-link {
+
+}
+
+.footer__socials-link img {
+    width: 24px;
+    height: 24px; }
